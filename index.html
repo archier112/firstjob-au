@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="FirstJob AU helps Australian teens and young adults find their first job.">
+  <title>FirstJob AU — Find Your First Job</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#home">FirstJob <span>AU</span></a>
+  <nav>
+    <a href="#jobs">Find a Job</a>
+    <a href="#how">How It Works</a>
+    <a href="#employers">For Employers</a>
+  </nav>
+  <a class="btn small" href="#post">Post a Job</a>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">🇦🇺 MADE FOR YOUNG AUSTRALIANS</p>
+      <h1>Your first job<br><span>starts here.</span></h1>
+      <p class="hero-copy">Find beginner-friendly jobs, understand what employers want, and take your first step into work — without making it complicated.</p>
+      <div class="actions">
+        <a class="btn" href="#jobs">🔎 Find my first job</a>
+        <a class="btn ghost" href="#how">How does it work?</a>
+      </div>
+      <p class="tiny">No experience? No worries. Start with jobs that are built for beginners.</p>
+    </div>
+    <div class="hero-card">
+      <div class="check">✓</div>
+      <h3>Ready to get started?</h3>
+      <p>Pick a job → check the requirements → apply.</p>
+      <a href="#jobs" class="card-link">See jobs →</a>
+    </div>
+  </section>
+
+  <section class="trust">
+    <div><b>👟 Beginner friendly</b><span>Jobs for people starting out</span></div>
+    <div><b>📱 Easy to use</b><span>Built for your phone</span></div>
+    <div><b>🇦🇺 Australia focused</b><span>Made for local young workers</span></div>
+  </section>
+
+  <section id="jobs" class="section">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">FIND YOUR FIT</p>
+        <h2>Jobs you can actually apply for</h2>
+        <p>Start with a category or search for something specific.</p>
+      </div>
+    </div>
+    <div class="searchbar">
+      <input id="search" type="search" placeholder="Try: café, retail, supermarket...">
+      <select id="category">
+        <option value="">All categories</option>
+        <option>Retail</option><option>Hospitality</option><option>Fast Food</option>
+        <option>Office</option><option>Sport & Recreation</option><option>Other</option>
+      </select>
+      <button class="btn" id="searchBtn">Search</button>
+    </div>
+    <div id="jobList" class="jobs"></div>
+    <p id="noJobs" class="empty hidden">No matching demo jobs yet. Try another search, or check back as employers add listings.</p>
+  </section>
+
+  <section id="how" class="section alt">
+    <p class="eyebrow">HOW IT WORKS</p>
+    <h2>Getting your first job is only 3 steps.</h2>
+    <div class="steps">
+      <article><b>01</b><h3>Find a job</h3><p>Search for jobs that suit your age, location, availability and interests.</p></article>
+      <article><b>02</b><h3>Check the details</h3><p>Read the hours, pay information, requirements and how to apply.</p></article>
+      <article><b>03</b><h3>Apply</h3><p>Follow the employer’s application instructions and put your best foot forward.</p></article>
+    </div>
+  </section>
+
+  <section class="section starter">
+    <div>
+      <p class="eyebrow">NEVER APPLIED BEFORE?</p>
+      <h2>We’ve got you.</h2>
+      <p>Not sure what to put on a resume? Don't know what to say in an interview? FirstJob AU can make the first step easier.</p>
+    </div>
+    <div class="tip">
+      <b>💡 Quick tip</b>
+      <p>Employers don't expect every teenager to have experience. Reliability, attitude and willingness to learn matter too.</p>
+    </div>
+  </section>
+
+  <section id="employers" class="section employer">
+    <div>
+      <p class="eyebrow">FOR EMPLOYERS</p>
+      <h2>Looking for your next young team member?</h2>
+      <p>Reach young Australians who are actively looking for their first job.</p>
+      <a class="btn" href="#post">Post a job</a>
+    </div>
+    <div class="employer-list">
+      <div>✓ Simple job posting</div><div>✓ Clear candidate information</div><div>✓ Built for mobile</div>
+    </div>
+  </section>
+
+  <section id="post" class="section form-section">
+    <div>
+      <p class="eyebrow">EMPLOYER JOB FORM</p>
+      <h2>Post a job</h2>
+      <p>Enter the basics below. This demo saves the listing on this device. A live version can connect this form to a real employer database.</p>
+    </div>
+    <form id="postForm">
+      <label>Business name<input name="business" required placeholder="e.g. Sunny Café"></label>
+      <label>Job title<input name="title" required placeholder="e.g. Junior Café Team Member"></label>
+      <label>Category<select name="category" required><option value="">Choose one</option><option>Retail</option><option>Hospitality</option><option>Fast Food</option><option>Office</option><option>Sport & Recreation</option><option>Other</option></select></label>
+      <label>Location<input name="location" required placeholder="e.g. Cockburn, WA"></label>
+      <label>Short description<textarea name="description" required placeholder="Tell applicants what the job involves..."></textarea></label>
+      <label>How to apply<input name="apply" required placeholder="Email, website or application instructions"></label>
+      <button class="btn" type="submit">Add job listing</button>
+      <p id="formMsg" class="success hidden"></p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="logo">FirstJob <span>AU</span></div>
+  <p>Helping young Australians take their first step into work.</p>
+  <p class="tiny">FirstJob AU is a job-listing platform. Always check employment, age and workplace requirements with the employer.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
